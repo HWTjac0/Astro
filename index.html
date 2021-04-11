@@ -11,12 +11,6 @@
       integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
       crossorigin="anonymous"
     ></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.min.js"
-      integrity="sha512-U4J4PbEJ2TMjFqPUSiKq7LLTHuEkPZVo0jl2fomi9pT7UAExh4xVi8KmoR7EfmyigH95aA68zpW7y3XzuoSurQ=="
-      crossorigin="anonymous"
-    ></script>
     <script src="https://unpkg.com/@barba/core"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -25,17 +19,20 @@
     />
     <meta
       name="description"
-      content="This is informative website about universe, solar systems, planets, stars, comets, blackhole, space companies. So basicly just space stuff"
+      content="This is informative website about universe, solar systems, planets, stars, comets, blackholes, space companies. So basicly just space stuff"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <script defer src="js\sliderslideshow.js" type="module"></script>
-    <script defer src="js\navbar.js"></script>
+    <script defer src="js/sliderslideshow.js" type="module"></script>
+    <script defer src="js/navbar.js"></script>
     <script defer src="js/imageslideshow.js" type="module"></script>
     <script defer src="js/imagecursor.js" type="module"></script>
     <script defer src="js/sitetransition.js"></script>
   </head>
   <body>
     <div data-barba="wrapper">
+      <div id="transition">
+        <h1></h1>
+      </div>
       <nav class="nav">
         <ul class="navList" id="navList">
           <li><a href="index.html" class="navItem whiteATag">Home</a></li>
@@ -214,7 +211,7 @@
             <h2 class="articleSubHeading">Demo</h2>
             <p class="articleText">
               For illustrating our solar system I created this little
-              interactive demo:
+              interactive demo(if demo doesnt work just refresh page):
             </p>
           </article>
           <div class="canvasWrapper">

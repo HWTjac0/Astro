@@ -1,28 +1,28 @@
-const navContent = document.querySelectorAll(".navList li a ");
+const navContent = document.getElementsByClassName("navItem");
+const transitionDiv = document.getElementById("transition");
+const transitionTitle = document.querySelector("#transition h1");
 var subPageTitle;
 
-/*Array.prototype.navContent.forEach.call((element) => {
-  element.addEventListener("click", () => {
-    subPageTitle = element.textContent;
-  });
-});*/
-
+Array.prototype.forEach.call(navContent, element => {
+    element.addEventListener("click", () => {
+        transitionTitle.innerHTML = element.innerHTML;
+    });
+});
 function pageTransition() {
-  var tl = gsap.timeline();
+  let tl = gsap.timeline();
 
   tl.to("#transition", {
     duration: 0.5,
     scaleY: 1,
-    transformOrigin: "bottom left",
+    transformOrigin: "top",
     stagger: 0.2,
   });
-
   tl.to("#transition", {
     duration: 0.5,
     scaleY: 0,
-    transformOrigin: "bottom left",
+    transformOrigin: "bottom",
     stagger: 0.1,
-    delay: 0.1,
+    delay: 1,
   });
 }
 function delay(n) {
@@ -38,10 +38,11 @@ barba.init({
     {
         async leave(data) {
             const done = this.async();
+            console.log( data.next.namespace);
             pageTransition();
-            await delay(1500);
+            await delay(500);
             done();
-        },
-    },
-  ],
+        }
+    }
+  ]
 });
