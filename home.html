@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astro</title>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.min.js"
+      integrity="sha512-U4J4PbEJ2TMjFqPUSiKq7LLTHuEkPZVo0jl2fomi9pT7UAExh4xVi8KmoR7EfmyigH95aA68zpW7y3XzuoSurQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="This is informative website about universe, solar systems, planets, stars, comets, blackhole, space companies. So basicly just space stuff"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js\sliderslideshow.js" type="module"></script>
+    <script defer src="js\navbar.js"></script>
+    <script defer src="js/imageslideshow.js" type="module"></script>
+    <script defer src="js/imagecursor.js" type="module"></script>
+  </head>
+  <body>
+    <div data-barba="wrapper">
+      <nav class="nav">
+        <ul class="navList" id="navList">
+          <li><a href="home.html" class="navItem whiteATag">Home</a></li>
+          <li><a href="about.html" class="navItem whiteATag">About</a></li>
+          <li>
+            <a href="home.html" class="navItem whiteATag"
+              ><img src="logo.svg" alt="" />
+            </a>
+          </li>
+          <li><a href="#" class="navItem whiteATag">Articles</a></li>
+          <li><a href="#" class="navItem whiteATag">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cursor circleCursor"></div>
+      <div class="cursor cursorCenter">+</div>
+      <div class="lightBoxBackground">
+        <div class="closeRow">
+          <img src="imgs/useful/closeicon.svg" alt="" class="closeButton" />
+        </div>
+        <div class="imageRow">
+          <div class="buttonColumn prevButtonColumn">
+            <img
+              src="imgs/useful/arrow.svg"
+              alt=""
+              id="prevButton"
+              class="imageButton"
+            />
+          </div>
+          <div class="lightBoxImages" id="lightBoxImages"></div>
+          <div class="buttonColumn nextButtonColumn">
+            <img
+              src="imgs/useful/arrow.svg"
+              alt=""
+              id="nextButton"
+              class="imageButton"
+            />
+          </div>
+        </div>
+      </div>
+      <div data-barba="container" data-barba-namespace="home">
+        <img src="imgs\useful\planet1.png" alt="" class="planet planet1" />
+        <img src="imgs\useful\planet2.png" alt="" class="planet planet2" />
+        <section class="header">
+          <div class="separator"></div>
+          <div class="sliderContainer">
+            <div class="sliderItem milkyway fade">
+              <img
+                src="../imgs/slider/Milkyway/milkyway1.webp"
+                alt=""
+                class="sliderImage sliderOverlay fade"
+              />
+              <img
+                src="../imgs/slider/Milkyway/milkyway2.webp"
+                alt=""
+                class="sliderImage sliderOverlay fade"
+              />
+              <div class="sliderOverlay dimOverlay"></div>
+              <div class="sliderItemContent">
+                <h1>Milky Way</h1>
+                <p>
+                  The Milky Way is the galaxy that contains our Solar System,
+                  with the name describing the galaxy's appearance from Earth: a
+                  hazy band of light seen in the night sky formed from stars
+                  that cannot be...
+                </p>
+                <a href="#" class="whiteATag">Read more</a>
+              </div>
+            </div>
+            <div class="sliderItem andromeda fade">
+              <img
+                src="../imgs/slider/Andromeda/andromeda1.webp"
+                alt=""
+                class="sliderImage sliderOverlay fade"
+              />
+
+              <div class="sliderOverlay dimOverlay"></div>
+              <div class="sliderItemContent">
+                <h1>Andromeda</h1>
+                <p>
+                  The Andromeda Galaxy, also known as Messier 31, M31, or NGC
+                  224 and originally the Andromeda Nebula, is a barred spiral
+                  galaxy approximately 2.5 million light-years (770 kiloparsecs)
+                  from Earth and the nearest major galaxy ...
+                </p>
+                <a href="#" class="whiteATag">Read more</a>
+              </div>
+            </div>
+            <div class="sliderItem nebula fade">
+              <img
+                src="../imgs/slider/Nebula/nebula2.webp"
+                alt=""
+                class="sliderImage sliderOverlay fade"
+              />
+              <div class="sliderOverlay dimOverlay"></div>
+              <div class="sliderItemContent">
+                <h1>Star nebula</h1>
+                <p>
+                  A nebula is an interstellar cloud of dust, hydrogen, helium
+                  and other ionized gases. Originally, the term was used to
+                  describe any diffused astronomical object, including galaxies
+                  beyond the Milky Way...
+                </p>
+                <a href="#" class="whiteATag">Read more</a>
+              </div>
+            </div>
+            <div class="sliderItem blackhole fade">
+              <img
+                src="../imgs/slider/Black hole/blackhole1.webp"
+                alt=""
+                class="sliderImage sliderOverlay fade"
+              />
+              <div class="sliderOverlay dimOverlay"></div>
+              <div class="sliderItemContent">
+                <h1>Black hole</h1>
+                <p>
+                  A black hole is a region of spacetime where gravity is so
+                  strong that nothing—no particles or even electromagnetic
+                  radiation such as light—can escape from it. The theory of
+                  general relativity predicts that a...
+                </p>
+                <a href="#" class="whiteATag">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="sliderPaginationContainer">
+            <div class="sliderPagination">
+              <div class="sliderIndex">
+                <div class="sliderIndexHover"></div>
+              </div>
+              <div class="sliderIndex">
+                <div class="sliderIndexHover"></div>
+              </div>
+              <div class="sliderIndex">
+                <div class="sliderIndexHover"></div>
+              </div>
+              <div class="sliderIndex">
+                <div class="sliderIndexHover"></div>
+              </div>
+            </div>
+          </div>
+          <div class="direction" id="direction">
+            <p>Most Recent Post</p>
+            <img src="imgs/useful/arrow.svg" alt="" />
+          </div>
+        </section>
+        <div class="articleWrapper">
+          <article class="article">
+            <h1 class="articleTopHeading">Solar System</h1>
+            <p class="articleText">
+              The <strong> Solar System </strong> is the gravitationally bound
+              system of the Sun and the objects that orbit it, either directly
+              or indirectly. Of the objects that orbit the Sun directly, the
+              largest are the eight planets, with the remainder being smaller
+              objects, the <strong>dwarf planets</strong> and small Solar System
+              bodies. Of the objects that orbit the Sun indirectly—the natural
+              satellites—two are larger than the smallest planet, Mercury.
+              <br />
+              <br />
+              The Solar System formed <strong> 4.6 billion </strong>years ago
+              from the gravitational collapse of a giant interstellar molecular
+              cloud. The vast majority of the system's mass is in the Sun, with
+              the majority of the remaining mass contained in Jupiter. The four
+              smaller inner planets, Mercury, Venus, Earth and Mars, are
+              terrestrial planets, being primarily composed
+              <strong> of rock and metal</strong>. The four outer planets are
+              giant planets, being substantially more massive than the
+              terrestrials. The two largest planets, Jupiter and Saturn,<strong>
+                are gas giants</strong
+              >, being composed mainly of hydrogen and helium; the two outermost
+              planets, Uranus and Neptune, are ice giants, being composed mostly
+              of substances with relatively high melting points compared with
+              hydrogen and helium, called volatiles, such as water, ammonia and
+              methane. All eight planets have almost circular orbits that lie
+              within a nearly flat disc called the ecliptic.
+            </p>
+            <h2 class="articleSubHeading">Demo</h2>
+            <p class="articleText">
+              For illustrating our solar system I created this little
+              interactive demo:
+            </p>
+          </article>
+          <div class="canvasWrapper">
+            <canvas id="c" class="canvas"></canvas>
+            <div class="canvasManualWrapper">
+              <h1 class="articleSubHeading canvasHeading">Solar system demo</h1>
+              <p class="articleText canvasText">
+                Drag mouse around to navigate camera. <br />
+                Use scroll to zoom in/out. <br />
+                Use Pause button to stop planets rotation <br />
+              </p>
+              <button class="canvasButton" id="canvasButton">Pause</button>
+            </div>
+          </div>
+          <script defer src="js/solarsystem.js" type="module"></script>
+        </div>
+      </div>
+      <section class="thisWeekPhotos">
+        <h2 class="articleSubHeading weekHeading">This week photos</h2>
+        <div class="photosPageContainer">
+          <div class="photosPage photosPage1 activePage">
+            <div class="photoContainer">
+              <img src="imgs/thisweek/andromeda.webp" alt="Andromeda" />
+              <div class="photoDetails">
+                <h2 class="articleSubHeading">Andromeda</h2>
+                <p>By James</p>
+              </div>
+            </div>
+            <div class="photoContainer">
+              <img src="imgs/thisweek/moon.webp" alt="Moon" />
+              <div class="photoDetails">
+                <h2 class="articleSubHeading">Moon</h2>
+                <p>By Notch</p>
+              </div>
+            </div>
+            <div class="photoContainer">
+              <img src="imgs/thisweek/spacex.webp" alt="SpaceX" />
+              <div class="photoDetails">
+                <h2 class="articleSubHeading">SpaceX</h2>
+                <p>By SpaceX</p>
+              </div>
+            </div>
+          </div>
+          <div class="photosPage photosPage2">
+            <div class="photoContainer">
+              <img src="imgs/thisweek/nasa2.webp" alt="ISS" />
+              <div class="photoDetails">
+                <h2 class="articleSubHeading">ISS</h2>
+                <p>By NASA</p>
+              </div>
+            </div>
+            <div class="photoContainer">
+              <img src="imgs/thisweek/comet.webp" alt="Comet" />
+              <div class="photoDetails">
+                <h2 class="articleSubHeading">Comet</h2>
+                <p>By Yui</p>
+              </div>
+            </div>
+            <div class="photoContainer">
+              <img src="imgs/thisweek/nasa.webp" alt="Earth" />
+              <div class="photoDetails">
+                <h2 class="articleSubHeading">Earth</h2>
+                <p>By NASA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="photosPagination">
+          <div class="photosIndex photosIndex1 activePageIndex"></div>
+          <div class="photosIndex photosIndex2"></div>
+        </div>
+      </section>
+      <footer class="footer">
+        <section class="upperFooter">
+          <div class="footerCard green">
+            <h2 class="footerCardTitle footerText">Stay in touch</h2>
+            <div></div>
+            <p class="footerParagraph">
+              For keeping track of our newest articles sign up to our newsletter
+            </p>
+            <div class="newsletterSubmit">
+              <input type="text" placeholder="Email" class="formTextInput" id="newsletterInput" /><button type="submit" class="submitButton" id="newsletterButton"> 
+                Sign up
+              </button>
+            </div>
+          </div>
+          <div class="footerCard purple">
+            <h2 class="footerCardTitle footerText">Find us on...</h2>
+            <div class="footerUnderline"></div>
+            <ul class="footerList">
+              <li>
+                <a href="" class="whiteATag contactLinkTag"
+                  ><div class="instagramLink socialLink contactLink">
+                    <img src="imgs/useful/instagram.svg" alt="" />
+                  </div>
+                  Instagram</a
+                >
+              </li>
+              <li>
+                <a href="" class="whiteATag contactLinkTag"
+                  ><div class="facebookLink socialLink contactLink ">
+                    <img src="imgs/useful/facebook.svg" alt="" />
+                  </div>
+                  Facebook</a
+                >
+              </li>
+              <li>
+                <a href="" class="whiteATag contactLinkTag">
+                  <div class="twitterLink socialLink contactLink">
+                    <img src="imgs/useful/twitter.svg" alt="" />
+                  </div>
+                  Twitter</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footerCard yellow">
+            <h2 class="footerCardTitle footerText">Contact</h2>
+            <ul class="footerList">
+              <li>
+                <a href="mailto: contact@astro.com" class="whiteATag contactLinkTag">
+                  <div class="mailLink contactLink">
+                    <img src="imgs/useful/mail.svg" alt="" />  </div> contact@astro.com
+                
+                </a>
+              </li>
+              <li>
+                <a href="phone: +48123123123" class="whiteATag contactLinkTag">
+                  <div class="phoneLink contactLink">
+                    <img src="imgs/useful/phone.svg" alt="" />  </div> +48 123 123 123
+                
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footerCard red">
+            <h2 class="footerCardTitle footerText">Have idea for article?</h2>
+            <p class="footerParagraph">
+              If you have idea for an article, write to us
+            </p>
+            <form action="" class="form">
+              <label for="articleMail" class="articleFormLabel">Email:</label>
+              <input type="text" id="articleMail" class="formTextInput" placeholder="janedoe@example.com"/>
+              <label for="articleMailContent" class="articleFormLabel">Content:</label>
+              <textarea name="" id="" cols="20" rows="10" id="articleMailContent" class="formTextInput" placeholder="Could you write about..." style="resize: none;"></textarea>
+              <button type="submit" class="submitButton" id="articleMailButton">Submit</button>
+            </form>
+          </div>
+        </section>
+        <section class="bottomFooter">
+          <hr class="footerSeparator" />
+          <p class="copyrightParagraph">(not)Copyright Jakub Młynarczyk</p>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>

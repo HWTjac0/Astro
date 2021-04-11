@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 120 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.993831,0,0,0.993831,-4.96496,-36.3334)">
+        <text x="17.347px" y="67.923px" style="font-family:'Ubuntu-Regular', 'Ubuntu', sans-serif;font-size:40.626px;fill:white;">A<tspan x="44.81px " y="67.923px ">s</tspan>tro</text>
+    </g>
+    <g transform="matrix(0.837021,0,0,0.842821,-23.959,-20.8602)">
+        <ellipse cx="70.077" cy="45.392" rx="1.823" ry="2.014" style="fill:white;"/>
+    </g>
+    <g transform="matrix(0.64227,0.93835,-0.931893,0.646721,2.34903,-89.8808)">
+        <path d="M87.717,17.717C91.586,17.717 94.728,26.311 94.728,36.897C94.728,47.482 91.586,56.077 87.717,56.077C83.848,56.077 80.706,47.482 80.706,36.897C80.706,26.311 83.848,17.717 87.717,17.717ZM87.717,19.096C91.308,19.096 94.223,27.073 94.223,36.897C94.223,46.721 91.308,54.697 87.717,54.697C84.126,54.697 81.211,46.721 81.211,36.897C81.211,27.073 84.126,19.096 87.717,19.096Z" style="fill:white;"/>
+    </g>
+    <g transform="matrix(1.13178,0,0,1.13963,-82.6086,-18.406)">
+        <circle cx="101.823" cy="19.011" r="1.823" style="fill:white;"/>
+    </g>
+    <g transform="matrix(1.13178,0,0,1.13963,-39.8321,-31.7214)">
+        <ellipse cx="41.553" cy="51.782" rx="1.72" ry="1.782" style="fill:white;"/>
+    </g>
+</svg>
