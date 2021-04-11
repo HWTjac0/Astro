@@ -666,6 +666,7 @@ input#newsletterInput {
 }
 .footerSeparator{
   border: #434343 solid 2px;
+  background-color: #434343;
   border-radius: 8px;
 }
 p.copyrightParagraph{
