@@ -41,26 +41,26 @@ var isActive = true;
 pauseButton.addEventListener("click", function() {isActive = !isActive});
 
 //----------------------MATERIALS----------------------------
-const sunMaterial = new THREE.MeshPhongMaterial({ color: 0xFFFFFF, map:  new THREE.TextureLoader().load( 'imgs/planets/sun/sun.webp')});
+const sunMaterial = new THREE.MeshPhongMaterial({ color: 0xFFFFFF, map:  new THREE.TextureLoader().load( '../imgs/planets/sun/sun.webp')});
 const sunTextTexture = new THREE.TextureLoader().load("../imgs/planets/sun/sunText.webp")
-const mercuryMaterial = new THREE.MeshPhongMaterial({color: 0xFFFFFF, map: new THREE.TextureLoader().load( 'imgs/planets/mercury/mercurymap.webp'),  bumpMap: new THREE.TextureLoader().load( 'imgs/planets/mercury/mercurybump.webp'), bumpScale: 0.3});
+const mercuryMaterial = new THREE.MeshPhongMaterial({color: 0xFFFFFF, map: new THREE.TextureLoader().load( '../imgs/planets/mercury/mercurymap.webp'),  bumpMap: new THREE.TextureLoader().load( '../imgs/planets/mercury/mercurybump.webp'), bumpScale: 0.3});
 const mercuryTextMaterial = new THREE.MeshBasicMaterial( {map:  new THREE.TextureLoader().load("../imgs/planets/mercury/mercuryText.webp"), side: THREE.DoubleSide, transparent:true} );
-const venusMaterial = new THREE.MeshPhongMaterial({ color: 0xFFFFFF, map: new THREE.TextureLoader().load( 'imgs/planets/venus/venusmap.webp')});
+const venusMaterial = new THREE.MeshPhongMaterial({ color: 0xFFFFFF, map: new THREE.TextureLoader().load( '../imgs/planets/venus/venusmap.webp')});
 const venusTextMaterial = new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader().load("../imgs/planets/venus/venusText.webp"), side: THREE.DoubleSide, transparent:true} ); 
-const moonMaterial = new THREE.MeshPhongMaterial({ color: 0xFFFFFF, map:  new THREE.TextureLoader().load( 'imgs/planets/earth/moonmap1k.webp'), bumpMap:new THREE.TextureLoader().load( 'imgs/planets/earth/moonbump1k.webp') });
-const earthMaterial = new THREE.MeshPhongMaterial({ color: 0xFFFFFF, map: new THREE.TextureLoader().load( 'imgs/planets/earth/earthtexture.webp'), bumpMap:new THREE.TextureLoader().load( 'imgs/planets/earth/earthbump1k.webp'), bumpScale: 0.3});
+const moonMaterial = new THREE.MeshPhongMaterial({ color: 0xFFFFFF, map:  new THREE.TextureLoader().load( '../imgs/planets/earth/moonmap1k.webp'), bumpMap:new THREE.TextureLoader().load( '../imgs/planets/earth/moonbump1k.webp') });
+const earthMaterial = new THREE.MeshPhongMaterial({ color: 0xFFFFFF, map: new THREE.TextureLoader().load( 'imgs/planets/earth/earthtexture.webp'), bumpMap:new THREE.TextureLoader().load( '../imgs/planets/earth/earthbump1k.webp'), bumpScale: 0.3});
 const earthTextMaterial = new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader().load("../imgs/planets/earth/earthText.webp"), side: THREE.DoubleSide, transparent:true} );
-const marsMaterial = new THREE.MeshPhongMaterial({color: 0xFFFFFF, map: new THREE.TextureLoader().load( 'imgs/planets/mars/mars_1k_color.webp'), bumpMap:new THREE.TextureLoader().load( 'imgs/planets/mars/marsbump1k.webp'), bumpScale: 0.3});
+const marsMaterial = new THREE.MeshPhongMaterial({color: 0xFFFFFF, map: new THREE.TextureLoader().load( '../imgs/planets/mars/mars_1k_color.webp'), bumpMap:new THREE.TextureLoader().load( '../imgs/planets/mars/marsbump1k.webp'), bumpScale: 0.3});
 const marsTextMaterial = new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader().load("../imgs/planets/mars/marsText.webp"), side: THREE.DoubleSide, transparent:true} );  
-const jupiterMaterial = new THREE.MeshPhongMaterial({ color: 0xFFFFFF, map: new THREE.TextureLoader().load( 'imgs/planets/jupiter/jupiter.webp')});
+const jupiterMaterial = new THREE.MeshPhongMaterial({ color: 0xFFFFFF, map: new THREE.TextureLoader().load( '../imgs/planets/jupiter/jupiter.webp')});
 const jupiterTextMaterial = new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader().load("../imgs/planets/jupiter/jupiterText.webp")
 , side: THREE.DoubleSide, transparent:true} );
-const saturnMaterial = new THREE.MeshPhongMaterial({color: 0xFFFFFF, map: new THREE.TextureLoader().load( 'imgs/planets/saturn/saturn.webp')});
+const saturnMaterial = new THREE.MeshPhongMaterial({color: 0xFFFFFF, map: new THREE.TextureLoader().load( '../imgs/planets/saturn/saturn.webp')});
 const saturnTextMaterial = new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader().load("../imgs/planets/saturn/saturnText.webp"), side: THREE.DoubleSide, transparent:true} );
-const uranusMaterial = new THREE.MeshPhongMaterial({color: 0xFFFFFF, map: new THREE.TextureLoader().load( 'imgs/planets/uranus/uranus.webp')});
+const uranusMaterial = new THREE.MeshPhongMaterial({color: 0xFFFFFF, map: new THREE.TextureLoader().load( '../imgs/planets/uranus/uranus.webp')});
 const uranusTextMaterial = new THREE.MeshBasicMaterial( {map:  new THREE.TextureLoader().load("../imgs/planets/uranus/uranusText.webp")
 , side: THREE.DoubleSide, transparent:true} );
-const neptuneMaterial = new THREE.MeshPhongMaterial({color: 0xFFFFFF, map: new THREE.TextureLoader().load( 'imgs/planets/neptune/neptunemap.webp')});
+const neptuneMaterial = new THREE.MeshPhongMaterial({color: 0xFFFFFF, map: new THREE.TextureLoader().load( '../imgs/planets/neptune/neptunemap.webp')});
 const neptuneTextMaterial = new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader().load("../imgs/planets/neptune/neptuneText.webp")
 , side: THREE.DoubleSide, transparent:true} );
 //---------------------PLANETS-----------------------------
