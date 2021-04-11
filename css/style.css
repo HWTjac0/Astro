@@ -38,7 +38,29 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
-
+#transition{
+  position: absolute;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  background: #fdfbff;
+  color: #9700dd;
+  justify-content: center;
+  align-items: center;
+}
+.transitionClass{
+  font-size: 50px;
+}
 .nav {
   position: fixed;
   z-index: 50;
