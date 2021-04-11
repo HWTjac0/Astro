@@ -1,11 +1,11 @@
 const navContent = document.querySelectorAll(".navList li a ");
 var subPageTitle;
 
-Array.prototype.navContent.forEach.call((element) => {
+/*Array.prototype.navContent.forEach.call((element) => {
   element.addEventListener("click", () => {
     subPageTitle = element.textContent;
   });
-});
+});*/
 
 function pageTransition() {
   var tl = gsap.timeline();
