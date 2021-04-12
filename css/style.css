@@ -696,6 +696,9 @@ input#newsletterInput {
 p.copyrightParagraph{
   color:rgba(90, 90, 90);  
 }
+.articlePreHeading{
+  text-align: center;
+}
 @keyframes fadeIn {
   from {
     opacity: 0.6;
