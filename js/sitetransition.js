@@ -54,7 +54,7 @@ barba.init({
   views: [
     {
       namespace: "home",
-      afterEnter(){
+      async afterEnter(){
         window.onscroll = () => {
           const arrow = document.getElementById("direction");
           if (
