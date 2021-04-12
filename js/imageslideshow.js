@@ -104,3 +104,4 @@ ligthboxImages.addEventListener("transitionend", ()=>{
     console.log(counter);
   }
 });
+

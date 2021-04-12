@@ -16,16 +16,13 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* Whole Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
   background-color: rgb(204, 204, 204);
 }
-/* Track */
 ::-webkit-scrollbar-track {
   border-radius: 10px;
 }
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background-color: rgb(133, 133, 133);
 }
@@ -54,7 +51,7 @@ body {
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   background: #fdfbff;
-  color: #c65bf8;
+  color: #1a1a1a;
   justify-content: center;
   align-items: center;
 }
@@ -696,16 +693,52 @@ input#newsletterInput {
 p.copyrightParagraph{
   color:rgba(90, 90, 90);  
 }
+.articleTopPreHeading{
+  margin-top: 10px;
+}
 .articlePreHeading{
+  font-size: 55px;
   text-align: center;
+  color: white;
 }
 .articlePreviewSep{
   margin: 15px 0;
   width: 100%;
 }
 .articlePreviewWrapper{
+  margin-top: 50px;
+}
+.articlePreview{
   display: grid;
   row-gap: 30px;
+}
+.articleTxtPreview{
+  font-size: 25px;
+  margin-top: 100px;
+}
+.previewHeaderContainer{
+  height: 200%;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow:
+  0 0px 6.2px -10px rgba(0, 0, 0, 0.008),
+  0 0px 14.8px -10px rgba(0, 0, 0, 0.012),
+  0 0px 27.9px -10px rgba(0, 0, 0, 0.015),
+  0 0px 49.8px -10px rgba(0, 0, 0, 0.018),
+  0 0px 93.2px -10px rgba(0, 0, 0, 0.022),
+  0 0px 223px -10px rgba(0, 0, 0, 0.03)
+;
+}
+.previewImage{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  filter: brightness(85%);
 }
 @keyframes fadeIn {
   from {
