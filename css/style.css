@@ -39,7 +39,7 @@ body {
   overflow-x: hidden;
 }
 #transition{
-  position: absolute;
+  position: fixed;
   z-index: 9999;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,7 +63,7 @@ body {
 }
 .nav {
   position: fixed;
-  z-index: 130;
+  z-index: 119;
   padding-top: 2px;
   width: 100%;
   transition: background-color 0.1s linear;

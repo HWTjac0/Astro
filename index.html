@@ -22,16 +22,11 @@
       content="This is informative website about universe, solar systems, planets, stars, comets, blackholes, space companies. So basicly just space stuff"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <script defer src="js/sliderslideshow.js" type="module"></script>
-    <script defer src="js/navbar.js"></script>
-    <script defer src="js/imageslideshow.js" type="module"></script>
-    <script defer src="js/imagecursor.js" type="module"></script>
-    <script defer src="js/sitetransition.js"></script>
   </head>
   <body>
     <div data-barba="wrapper">
       <div id="transition">
-        <h1></h1>
+        <h1 class="transitionClass"></h1>
       </div>
       <nav class="nav">
         <ul class="navList" id="navList">
@@ -226,7 +221,6 @@
               <button class="canvasButton" id="canvasButton">Pause</button>
             </div>
           </div>
-          <script defer src="js/solarsystem.js" type="module"></script>
         </div>
       </div>
       <section class="thisWeekPhotos">
@@ -293,7 +287,16 @@
               For keeping track of our newest articles sign up to our newsletter
             </p>
             <div class="newsletterSubmit">
-              <input type="text" placeholder="Email" class="formTextInput" id="newsletterInput" /><button type="submit" class="submitButton" id="newsletterButton"> 
+              <input
+                type="text"
+                placeholder="Email"
+                class="formTextInput"
+                id="newsletterInput"
+              /><button
+                type="submit"
+                class="submitButton"
+                id="newsletterButton"
+              >
                 Sign up
               </button>
             </div>
@@ -312,7 +315,7 @@
               </li>
               <li>
                 <a href="" class="whiteATag contactLinkTag"
-                  ><div class="facebookLink socialLink contactLink ">
+                  ><div class="facebookLink socialLink contactLink">
                     <img src="imgs/useful/facebook.svg" alt="" />
                   </div>
                   Facebook</a
@@ -332,17 +335,22 @@
             <h2 class="footerCardTitle footerText">Contact</h2>
             <ul class="footerList">
               <li>
-                <a href="mailto: contact@astro.com" class="whiteATag contactLinkTag">
+                <a
+                  href="mailto: contact@astro.com"
+                  class="whiteATag contactLinkTag"
+                >
                   <div class="mailLink contactLink">
-                    <img src="imgs/useful/mail.svg" alt="" />  </div> contact@astro.com
-                
+                    <img src="imgs/useful/mail.svg" alt="" />
+                  </div>
+                  contact@astro.com
                 </a>
               </li>
               <li>
                 <a href="phone: +48123123123" class="whiteATag contactLinkTag">
                   <div class="phoneLink contactLink">
-                    <img src="imgs/useful/phone.svg" alt="" />  </div> +48 123 123 123
-                
+                    <img src="imgs/useful/phone.svg" alt="" />
+                  </div>
+                  +48 123 123 123
                 </a>
               </li>
             </ul>
@@ -354,10 +362,28 @@
             </p>
             <form action="" class="form">
               <label for="articleMail" class="articleFormLabel">Email:</label>
-              <input type="text" id="articleMail" class="formTextInput" placeholder="janedoe@example.com"/>
-              <label for="articleMailContent" class="articleFormLabel">Content:</label>
-              <textarea name="" id="" cols="20" rows="10" id="articleMailContent" class="formTextInput" placeholder="Could you write about..." style="resize: none;"></textarea>
-              <button type="submit" class="submitButton" id="articleMailButton">Submit</button>
+              <input
+                type="text"
+                id="articleMail"
+                class="formTextInput"
+                placeholder="janedoe@example.com"
+              />
+              <label for="articleMailContent" class="articleFormLabel"
+                >Content:</label
+              >
+              <textarea
+                name=""
+                id=""
+                cols="20"
+                rows="10"
+                id="articleMailContent"
+                class="formTextInput"
+                placeholder="Could you write about..."
+                style="resize: none"
+              ></textarea>
+              <button type="submit" class="submitButton" id="articleMailButton">
+                Submit
+              </button>
             </form>
           </div>
         </section>
@@ -366,6 +392,13 @@
           <p class="copyrightParagraph">(not)Copyright Jakub Młynarczyk</p>
         </section>
       </footer>
+
+      <script  src="js/sliderslideshow.js" type="module"></script>
+      <script  src="js/navbar.js"></script>
+      <script  src="js/imageslideshow.js" type="module"></script>
+      <script  src="js/imagecursor.js" type="module"></script>
+      <script  src="js/sitetransition.js"></script>
+      <script  src="js/solarsystem.js" type="module"></script>
     </div>
   </body>
 </html>

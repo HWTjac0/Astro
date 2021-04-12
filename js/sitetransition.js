@@ -8,6 +8,14 @@ Array.prototype.forEach.call(navContent, element => {
         transitionTitle.innerHTML = element.innerHTML;
     });
 });
+function createScriptTag(src){
+  var scriptTag = document.createElement("script");
+  scriptTag.setAttribute("src", src);
+  scriptTag.setAttribute("type", "module");
+  scriptTag.setAttribute("defer", "defer");
+  document.body.appendChild(scriptTag);
+}
+
 function pageTransition() {
   let tl = gsap.timeline();
 
@@ -33,12 +41,13 @@ function delay(n) {
         }, n);
     });
 }
+
 barba.init({
+  sync: true,
   transitions: [
     {
         async leave(data) {
             const done = this.async();
-            console.log( data.next.namespace);
             pageTransition();
             await delay(500);
             done();
