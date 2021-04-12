@@ -740,6 +740,18 @@ p.copyrightParagraph{
   object-fit: cover;
   filter: brightness(85%);
 }
+.previewReadMore{
+  font-weight: 600;
+  color: #434343;
+  padding: 7px 12px;
+  border: solid 3px #434343;
+  width: 117px;
+  transition: background-color 0.1s ease-in, color 0.1s ease-in;
+}
+.previewReadMore:hover{
+  background-color: #434343;
+  color: white;
+}
 @keyframes fadeIn {
   from {
     opacity: 0.6;
