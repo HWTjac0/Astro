@@ -54,12 +54,14 @@ body {
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   background: #fdfbff;
-  color: #9700dd;
+  color: #c65bf8;
   justify-content: center;
   align-items: center;
 }
 .transitionClass{
-  font-size: 50px;
+  opacity: 0;
+  transform: translateY(50px);
+  font-size: 80px;
 }
 .nav {
   position: fixed;

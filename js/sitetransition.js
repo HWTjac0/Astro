@@ -25,12 +25,25 @@ function pageTransition() {
     transformOrigin: "top",
     stagger: 0.2,
   });
+  tl.to("#transition h1",{
+    duration: 0.4,
+    translateY: -40,
+    transformOrigin: "bottom",
+    opacity: 1,
+  });
+  tl.to("#transition h1",{
+    duration: 0.4,
+    translateY: -80,
+    transformOrigin: "top",
+    opacity: 0,
+    delay: 0.5
+  });
   tl.to("#transition", {
     duration: 0.5,
     scaleY: 0,
     transformOrigin: "bottom",
     stagger: 0.1,
-    delay: 1,
+    delay: 0.1,
   });
 }
 function delay(n) {
