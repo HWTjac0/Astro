@@ -699,6 +699,14 @@ p.copyrightParagraph{
 .articlePreHeading{
   text-align: center;
 }
+.articlePreviewSep{
+  margin: 15px 0;
+  width: 100%;
+}
+.articlePreviewWrapper{
+  display: grid;
+  row-gap: 30px;
+}
 @keyframes fadeIn {
   from {
     opacity: 0.6;
